@@ -2,6 +2,8 @@
 #TODO(Jedi Duncan Gonot): Module 2
 #TODO(Dion Manicio): Module 3
 #TODO(Paul Benidict Reduta): Module 4
+from losratonespackage.rodriguez import basic_calculations
+from losratonespackage.reduta import download_and_save_image
 #TODO(John Paul Rodriguez): Module 5
 
 def main():
@@ -25,9 +27,18 @@ def main():
             case 3:
                 pass
             case 4:
-                pass
+                image_url = """https://preview.redd.it/gigil-ako-sa-mga-pet
+                -owners-na-walang-konsensya-v0-5z50gy2a3kze1.jpeg?width=640
+                &crop=smart&auto=webp&s=caaa94aa00921ee78d43a14fdff1a79b174
+                d8be3"""
+                
+                download_and_save_image(image_url)
+                input("Press Enter to continue...")
+
             case 5:
-                pass
+                result = basic_calculations()
+                print(result)
+                input("Press Enter to continue...")
             case 6:
                 break
             case _:
