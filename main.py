@@ -1,10 +1,9 @@
 #TODO(Kenji Enishi Campos): Module 1
 #TODO(Jedi Duncan Gonot): Module 2
-#TODO(Dion Manicio): Module 3
-#TODO(Paul Benidict Reduta): Module 4
+from losratonespackage.manicio import generate_qr_with_text
 from losratonespackage.rodriguez import basic_calculations
 from losratonespackage.reduta import download_and_save_image
-#TODO(John Paul Rodriguez): Module 5
+
 
 def main():
     while True:
@@ -25,7 +24,8 @@ def main():
             case 2:
                 pass
             case 3:
-                pass
+                generate_qr_with_text("Hello from Manicio!")
+                input("Press Enter to continue...")
             case 4:
                 image_url = """https://preview.redd.it/gigil-ako-sa-mga-pet
                 -owners-na-walang-konsensya-v0-5z50gy2a3kze1.jpeg?width=640
