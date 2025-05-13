@@ -1,4 +1,4 @@
-from losratonespackage.campos import ice_cream_flavor
+#TODO(Kenji Enishi Campos): Module 1
 #TODO(Jedi Duncan Gonot): Module 2
 #TODO(Dion Manicio): Module 3
 #TODO(Paul Benidict Reduta): Module 4
@@ -19,8 +19,7 @@ def main():
 
         match choice:
             case 1:
-                ice_cream_flavor()
-                input("Press Enter to continue...")
+                pass
             case 2:
                 pass
             case 3:
