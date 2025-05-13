@@ -41,14 +41,14 @@ def main():
                 input("Press Enter to continue...")
 
             case 5:
-                result = basiccalculations()
+                result = basic_calculations()
                 print(result)
                 input("Press Enter to continue...")
 
             case 6:
                 break
 
-            case :
+            case _:
                 print("Invalid choice. Please select a valid choice.")
 
 main()
