@@ -1,5 +1,5 @@
 from losratonespackage.campos import ice_cream_flavor
-#TODO(Jedi Duncan Gonot): Module 2
+from losratonespackage.gonot import movie
 from losratonespackage.manicio import generate_qr_with_text
 from losratonespackage.rodriguez import basic_calculations
 from losratonespackage.reduta import download_and_save_image
@@ -15,7 +15,7 @@ def main():
             "5. Rodriguez Module", 
             "6. Exit",
             sep="\n")
-        
+
         choice = int(input("Enter your choice(1-5): "))
 
         match choice:
@@ -24,7 +24,9 @@ def main():
                 input("Press Enter to continue...")
 
             case 2:
-                pass
+                movie()
+                input("Press Enter to continue...")
+                
             case 3:
                 generate_qr_with_text("Hello from Manicio!")
                 input("Press Enter to continue...")
@@ -34,19 +36,19 @@ def main():
                 -owners-na-walang-konsensya-v0-5z50gy2a3kze1.jpeg?width=640
                 &crop=smart&auto=webp&s=caaa94aa00921ee78d43a14fdff1a79b174
                 d8be3"""
-                
+
                 download_and_save_image(image_url)
                 input("Press Enter to continue...")
 
             case 5:
-                result = basic_calculations()
+                result = basiccalculations()
                 print(result)
                 input("Press Enter to continue...")
 
             case 6:
                 break
-            
-            case _:
+
+            case :
                 print("Invalid choice. Please select a valid choice.")
 
 main()
