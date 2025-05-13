@@ -25,9 +25,14 @@ def main():
             case 3:
                 pass
             case 4:
-                image_url = "https://preview.redd.it/gigil-ako-sa-mga-pet-owners-na-walang-konsensya-v0-5z50gy2a3kze1.jpeg?width=640&crop=smart&auto=webp&s=caaa94aa00921ee78d43a14fdff1a79b174d8be3"
+                image_url = """https://preview.redd.it/gigil-ako-sa-mga-pet
+                -owners-na-walang-konsensya-v0-5z50gy2a3kze1.jpeg?width=640
+                &crop=smart&auto=webp&s=caaa94aa00921ee78d43a14fdff1a79b174
+                d8be3"""
+                
                 download_and_save_image(image_url)
                 input("Press Enter to continue...")
+
             case 5:
                 pass
             case 6:
