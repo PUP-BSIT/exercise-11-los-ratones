@@ -2,7 +2,7 @@
 #TODO(Jedi Duncan Gonot): Module 2
 #TODO(Dion Manicio): Module 3
 #TODO(Paul Benidict Reduta): Module 4
-#TODO(John Paul Rodriguez): Module 5
+from losratonespackage.rodriguez import basic_calculations
 
 def main():
     while True:
@@ -27,7 +27,9 @@ def main():
             case 4:
                 pass
             case 5:
-                pass
+                result = basic_calculations()
+                print(result)
+                input("Press Enter to continue...")
             case 6:
                 break
             case _:
