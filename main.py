@@ -1,4 +1,4 @@
-#TODO(Kenji Enishi Campos): Module 1
+from losratonespackage.campos import ice_cream_flavor
 #TODO(Jedi Duncan Gonot): Module 2
 from losratonespackage.manicio import generate_qr_with_text
 from losratonespackage.rodriguez import basic_calculations
@@ -20,7 +20,9 @@ def main():
 
         match choice:
             case 1:
-                pass
+                ice_cream_flavor()
+                input("Press Enter to continue...")
+                
             case 2:
                 pass
             case 3:
