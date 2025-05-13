@@ -1,6 +1,8 @@
 #TODO(Kenji Enishi Campos): Module 1
 #TODO(Jedi Duncan Gonot): Module 2
 #TODO(Dion Manicio): Module 3
+#TODO(Paul Benidict Reduta): Module 4
+from losratonespackage.rodriguez import basic_calculations
 from losratonespackage.reduta import download_and_save_image
 #TODO(John Paul Rodriguez): Module 5
 
@@ -34,7 +36,9 @@ def main():
                 input("Press Enter to continue...")
 
             case 5:
-                pass
+                result = basic_calculations()
+                print(result)
+                input("Press Enter to continue...")
             case 6:
                 break
             case _:
