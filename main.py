@@ -22,12 +22,13 @@ def main():
             case 1:
                 ice_cream_flavor()
                 input("Press Enter to continue...")
-                
+
             case 2:
                 pass
             case 3:
                 generate_qr_with_text("Hello from Manicio!")
                 input("Press Enter to continue...")
+
             case 4:
                 image_url = """https://preview.redd.it/gigil-ako-sa-mga-pet
                 -owners-na-walang-konsensya-v0-5z50gy2a3kze1.jpeg?width=640
@@ -41,8 +42,10 @@ def main():
                 result = basic_calculations()
                 print(result)
                 input("Press Enter to continue...")
+
             case 6:
                 break
+            
             case _:
                 print("Invalid choice. Please select a valid choice.")
 
