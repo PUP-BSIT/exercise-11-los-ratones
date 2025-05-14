@@ -17,5 +17,3 @@ def movie():
         ])
         print(response)
 
-# Run the function
-movie()
