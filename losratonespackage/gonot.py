@@ -1,6 +1,10 @@
 import random
+import pyfiglet
 
 def movie():
+    banner = pyfiglet.figlet_format("Movie Rater")
+    print(banner)
+
     name = input("What's your name?: ")
     movie = input("What's your favorite movie?: ")
 
@@ -12,3 +16,6 @@ def movie():
             f"{name}, this movie is trash"
         ])
         print(response)
+
+# Run the function
+movie()
