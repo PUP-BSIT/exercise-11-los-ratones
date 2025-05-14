@@ -4,6 +4,7 @@ from losratonespackage.manicio import generate_qr_with_text
 from losratonespackage.rodriguez import basic_calculations
 from losratonespackage.reduta import download_and_save_image
 
+PAUSE_MESSAGE = "Press Enter to continue..."
 
 def main():
     while True:
@@ -16,20 +17,20 @@ def main():
             "6. Exit",
             sep="\n")
 
-        choice = int(input("Enter your choice(1-5): "))
+        choice = int(input("Enter your choice(1-6): "))
 
         match choice:
             case 1:
                 ice_cream_flavor()
-                input("Press Enter to continue...")
+                input(PAUSE_MESSAGE)
 
             case 2:
                 movie()
-                input("Press Enter to continue...")
+                input(PAUSE_MESSAGE)
                 
             case 3:
                 generate_qr_with_text("Hello from Manicio!")
-                input("Press Enter to continue...")
+                input(PAUSE_MESSAGE)
 
             case 4:
                 image_url = """https://preview.redd.it/gigil-ako-sa-mga-pet
@@ -38,14 +39,15 @@ def main():
                 d8be3"""
 
                 download_and_save_image(image_url)
-                input("Press Enter to continue...")
+                input(PAUSE_MESSAGE)
 
             case 5:
                 result = basic_calculations()
                 print(result)
-                input("Press Enter to continue...")
+                input(PAUSE_MESSAGE)
 
             case 6:
+                #Exit
                 break
 
             case _:
